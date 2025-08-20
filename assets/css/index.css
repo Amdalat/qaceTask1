@@ -1,0 +1,411 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+}
+
+header{
+    padding: 10px 10%;
+    background-color: antiquewhite;
+}
+
+#hamburger{
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+    width: max-content;
+}
+
+#hamburger div{
+    width: 30px;
+    height: 3px;
+    background-color: black;
+}
+
+.hidediv{
+    display: none;
+}
+
+#logo{
+    width: 70px;
+    height: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: darkblue;
+    transition: ease-in-out 0.2s;
+    transform: scale(1.03);
+}
+
+nav{
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+button{
+    height: 40px;
+    background-color: goldenrod;
+    border-radius: 5px;
+    border: none;
+    padding: 0 15px;
+    color: white;
+}
+button:hover{
+    transition: ease-in-out 0.2s;
+    transform: scale(1.1);
+}
+
+input{
+    height: 33px;
+}
+
+main{
+    padding: 10px 100px;
+}
+
+#hero{
+    color: white;
+    background-image: url("../images/IMG_20191025_224137.jpg");
+    background-size: cover;
+    padding: 100px 10%;
+}
+
+#herotext{
+    width: 400px;
+}
+
+#herotabs{
+    display: flex;
+    gap: 10px;
+}
+
+.herotab{
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.158);
+    border-radius: 5px 5px 0 0;
+    font-size: 13px;
+}
+
+.activetab{
+    background-color: white;
+    color: black;
+}
+
+#heroselect{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: max-content;
+    padding: 10px 10px;
+    border-radius: 0 5px 5px 5px;
+}
+
+label{
+    color: darkblue;
+}
+
+#aboutus{
+    padding: 30px 0 10px 0;
+    background-color: rgba(128, 128, 128, 0.155);
+}
+
+#aboutushr{
+    background-color: white;
+    border: none;
+    width: 63%;
+    height: 2px;
+    margin-left: 10px;
+}
+
+#abouttext{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    line-height: 30px;
+
+}
+#abouttext h2{
+    font-size: 30px;
+    margin: 0;
+}
+
+#cards{
+    display: flex;
+    margin: 50px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.card{
+    width: 180px;
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 10px;
+    color: darkblue;
+}
+.card:hover{
+    transition: ease-in-out 0.2s;
+    transform: scaleY(1.05);
+    background-color: darkblue;
+    color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.514);
+}
+
+.card img{
+    width: 100%;
+    max-width: 180px;
+    height: 150px;
+    border-radius: 9px 9px 0 0;
+}
+
+.cardtitle{
+    padding: 10px 0;
+    border-radius: 0 0 10px 10px ;
+}
+
+#training{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#training img{
+    width: 60%;
+    height: 70vh;
+    clip-path: polygon(25% 0, 100% 0, 100% 100%, 25% 100%, 0 50%);
+}
+
+#trainingtext, .horsestext{
+    padding: 30px 0;
+    width: 40%;
+    margin: 10px 5% 10px 10%;
+    line-height: 30px;
+}
+
+#trainingtext h1, .horsestext h1{
+    font-size: 35px;
+    color: darkblue;
+    margin: 0;
+}
+
+.horses{
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.155);
+    padding: 30px 0;
+    margin-bottom: -20px;
+}
+
+.horsestext{
+    width: 25%;
+}
+
+hr{
+        background-color: goldenrod;
+        width: 50px;
+        height: 2px;
+        border-radius: 20px;
+        margin-left: 0;
+    }
+
+.carousel{
+    display: flex;
+    width: 70%;
+    padding: 30px 0;
+    margin: 0;
+}
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carouselimg{
+    flex: 0 0 33.3%;
+    background-size: cover;
+    height: 250px;
+}
+
+.activeimg{
+    transition: ease-in-out 0.2s;
+    transform: scale(1.07);
+    box-shadow: 2px 2px  10px rgba(0, 0, 0, 0.897);
+}
+
+.horseblank{
+    height: 82%;
+}
+
+.horsedet{
+    border-top: 2px solid white;
+    color: white;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 10px;
+    padding: 0 10px;
+    height: 30px;
+}
+
+.horsedet h3, .horsedet p{
+    margin: 10px 0;
+}
+
+.horsedet p{
+    font-size: 10px;
+}
+
+footer{
+    background-color: darkblue;
+    /* margin-top: -40px; */
+    /* z-index: 1; 
+    position: relative; */
+}
+
+#footercontent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 30px 7% 10px 7%;
+}
+
+footer img{
+    width: 200px;
+    height: 100px;
+}
+
+footer hr{
+    width: 95%;
+    background-color: rgba(255, 255, 255, 0.354);
+    height: 2px;
+    border: none;
+    margin-left: auto;
+}
+
+.footersub{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footersub p{
+    width: 300px;
+    word-wrap: break-word;
+    margin: 0;
+}
+.footersub a:hover{
+    color: white;
+    transition: ease-in-out 0.2s;
+    transform: scale(1.0);
+}
+
+#footerend{
+    text-align: center;
+    padding-bottom: 5px;
+
+}
+
+
+@media (max-width: 1023px){
+    #training, .horses{
+        flex-direction: column;
+    }
+
+    #trainingtext, .horsestext{
+        width: 90%;
+        text-align: center;
+    }
+
+    #training img{
+        width: 90%;
+        clip-path: polygon(0% 0%, 100% 0%,100% 100%, 0% 100%)
+    }
+
+    hr{
+        margin-left: auto;
+    }
+
+    .carousel{
+        width: 90%;
+        padding: 30px 0;
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+
+    #footercontent {
+        grid-template-columns: 1fr 1fr;   
+    }
+}
+
+@media (max-width: 768px) {
+    #heroselect{
+        flex-wrap: wrap;
+        width: 410px;
+        padding: 10px 10px;
+        border-top-right-radius: 5px;
+    }
+
+    #hero{
+        margin: auto;
+    }
+
+    #abouttext, #herotext{
+        width: 90%;
+    }
+    #aboutushr{
+        width: 100%;
+        height: 2px;
+        margin: auto;
+    }
+
+    .carouselimg{
+        flex: 0 0 34%;
+        background-image: url("../images/IMG_20191025_224137.jpg");
+        background-size: cover;
+        height: 220px;
+    }
+
+    .horseblank{
+        height: 78%;
+    }
+    .horsedet{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        padding: 0 10px;
+        height: 30px;
+    }
+
+    .horsedet h3, .horsedet p{
+        margin: 0;
+    }
+
+    .horsedet p{
+        font-size: 10px;
+    }
+
+    #footercontent {
+        grid-template-columns: 1fr;   
+    }
+}
+
+
+/* inprogess */
+.curved-section {
+    /* background: black; */
+    padding-bottom: 100px;
+    clip-path: ellipse(120% 100% at 50% 0%);
+     z-index: 2; position: relative;
+    /* clip-path: ellipse(120% 100% at 50% 100%); */
+}
