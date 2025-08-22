@@ -87,6 +87,7 @@ main{
 
 .herotab{
     width: 100px;
+    word-wrap: break-word;
     height: 30px;
     line-height: 30px;
     text-align: center;
@@ -142,6 +143,7 @@ label{
 #cards{
     display: flex;
     margin: 50px 0;
+    padding: 0 3%;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
