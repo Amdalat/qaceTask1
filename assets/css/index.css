@@ -324,7 +324,6 @@ footer hr{
     #heroselect{
         flex-wrap: wrap;
         min-width: 70%;
-        background-color: gray;
     }
 
     #training, .horses{
