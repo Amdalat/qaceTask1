@@ -143,7 +143,7 @@ label{
 #cards{
     display: flex;
     margin: 50px 0;
-    /* padding: 0 10px; */
+    padding: 0;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
@@ -297,6 +297,7 @@ footer hr{
 
 .footersub{
     display: flex;
+    /* flex-wrap: wrap; */
     flex-direction: column;
     gap: 10px;
 }
@@ -324,6 +325,10 @@ footer hr{
     #heroselect{
         flex-wrap: wrap;
         min-width: 70%;
+    }
+
+    #hero{
+        word-wrap: break-word;
     }
 
     #training, .horses{
@@ -402,6 +407,10 @@ footer hr{
 
     #footercontent {
         grid-template-columns: 1fr;   
+    }
+
+    .footersub p{
+        min-width: 100px;
     }
 }
 
