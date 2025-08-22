@@ -6,7 +6,6 @@ body{
 
 header{
     padding: 10px 10%;
-    background-color: blue;
 }
 
 #hamburger{
@@ -88,7 +87,7 @@ main{
 .herotab{
     width: 100px;
     word-wrap: break-word;
-    height: 30px;
+    min-height: 30px;
     line-height: 30px;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.158);
@@ -104,6 +103,7 @@ main{
 #heroselect{
     gap: 10px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     background-color: white;
     width: max-content;
@@ -143,10 +143,10 @@ label{
 #cards{
     display: flex;
     margin: 50px 0;
-    padding: 0 3%;
+    padding: 0 10px;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
     width: 100%;
 }
 
@@ -306,6 +306,7 @@ footer hr{
     word-wrap: break-word;
     margin: 0;
 }
+
 .footersub a:hover{
     color: white;
     transition: ease-in-out 0.2s;
@@ -320,6 +321,12 @@ footer hr{
 
 
 @media (max-width: 1023px){
+    #heroselect{
+        flex-wrap: wrap;
+        min-width: 70%;
+        background-color: gray;
+    }
+
     #training, .horses{
         flex-direction: column;
     }
@@ -352,10 +359,7 @@ footer hr{
 
 @media (max-width: 768px) {
     #heroselect{
-        flex-wrap: wrap;
-        width: 410px;
-        padding: 10px 10px;
-        border-top-right-radius: 5px;
+        width: 95%;
     }
 
     #hero{
