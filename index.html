@@ -8,202 +8,266 @@
 </head>
 <body>
     <!-- navbar -->
-    <header>
-        <div id="rownav" class="hidediv">
-            <div style="display: flex; flex-wrap: wrap;  gap:15px; justify-content: space-between; align-items: center;">
-                <img id="logo" src="./assets/images/IMG_20191025_224137.jpg" alt="logo">
+    <div class="container">
+        <header>
+                <div id="rownav" class="hidediv">
+                    <div style="display: flex; flex-wrap: wrap;  gap:15px; justify-content: space-between; align-items: center;">
+                        <img id="logo" src="./assets/images/IMG_20191025_224137.jpg" alt="logo">
 
-                <nav style="display: flex;">
-                    <a href="#">Home</a>
-                    <a href="#aboutus">About</a>
-                    <a href="#training">Riding School</a>
-                    <a href="#">Riding Holiday</a>
-                    <a href="#">Carries</a>
-                    <a href="#">Riding Stable</a>
-                    <a href="#">Contact</a>
-                </nav>
+                        <nav style="display: flex;">
+                            <a href="#">Home</a>
+                            <a href="#aboutus">About</a>
+                            <a href="#training">Riding School</a>
+                            <a href="#">Riding Holiday</a>
+                            <a href="#">Carries</a>
+                            <a href="#">Riding Stable</a>
+                            <a href="#">Contact</a>
+                        </nav>
 
-                <button id="loginbtn">Log In</button>
-
-                <form action="">
-                    <input id="searchinput" type="text" placeholder="Search in here...">
-                    <button id="searchbtn">Search</button>
-                </form> 
-            </div> 
-        </div>
-
-        <div id="columnnav" class="hidediv">
-            <div style="display: flex; justify-content: space-between; align-items: center;">
-                <img id="logo" src="./assets/images/IMG_20191025_224137.jpg" alt="logo">
-            
-                <div id="hamburger">
-                    <div ></div>
-                    <div></div>
-                    <div></div>
-                </div>              
-            </div>
-            <div class="hidediv" style="flex-direction: column; padding-top: 20px;" >
-                    <nav style="flex-direction: column; padding: 10px 0;">
-                        <a href="#">Home</a>
-                        <a href="#aboutus">About</a>
-                        <a href="#training">Riding School</a>
-                        <a href="#">Riding Holiday</a>
-                        <a href="#">Carries</a>
-                        <a href="#">Riding Stable</a>
-                        <a href="#">Contact</a>
-                    </nav>
-                    <section style="display: flex; gap: 60px;">
                         <button id="loginbtn">Log In</button>
+
                         <form action="">
-                            <input id="searchinput" type="text" placeholder="Search in here...">
-                            <button id="searchbtn">Search</button>
-                        </form>
-                    </section>
-            </div>
-        </div>  
-    </header>
+                            <input class="searchinput" type="text" placeholder="Search in here...">
+                            <button class="searchbtn">Search</button>
+                        </form> 
+                    </div> 
+                </div>
+
+                <div id="columnnav" class="hidediv">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <img id="logo" src="./assets/images/IMG_20191025_224137.jpg" alt="logo">
+                    
+                        <div id="hamburger">
+                            <div ></div>
+                            <div></div>
+                            <div></div>
+                        </div>              
+                    </div>
+                    <div class="hidediv" style="flex-direction: column; padding-top: 20px;" >
+                            <nav style="flex-direction: column; padding: 10px 0;">
+                                <a href="#">Home</a>
+                                <a href="#aboutus">About</a>
+                                <a href="#training">Riding School</a>
+                                <a href="#">Riding Holiday</a>
+                                <a href="#">Carries</a>
+                                <a href="#">Riding Stable</a>
+                                <a href="#">Contact</a>
+                            </nav>
+                            <section style="display: flex; gap: 60px;">
+                                <button id="loginbtn">Log In</button>
+                                <form action="">
+                                    <input class="searchinput" type="text" placeholder="Search in here...">
+                                    <button class="searchbtn">Search</button>
+                                </form>
+                            </section>
+                    </div>
+                </div>  
+        </header>
+    </div>
 
     <!-- herosection -->
     <div id="hero">
-        <div id="herotext">
-            <p style="font-size: 35px; margin: 0;">WELCOME TO <strong style="font-size: 60px;">TRABLAND</strong></p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe doloremque totam similique ipsam laborum quod, reprehenderit eum quo blanditiis.</p>
-        </div>
-            
-
-        <div id="herosub">
-            <div id="herotabs">
-                <div class="herotab activetab">Riding School</div>
-                <div class="herotab">Riding Holiday</div>
-                <div class="herotab">Carries</div>
-                <div class="herotab">Riding Stable</div>
+        <div class="container" >
+            <div id="herotext">
+                    <p style="font-size: 2rem; margin: 0;">WELCOME TO <strong style="font-size: 3rem;">TRABLAND</strong></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe doloremque totam similique ipsam laborum quod, reprehenderit eum quo blanditiis.</p>
             </div>
+            <div id="herosub">
+                    <div id="herotabs">
+                        <div class="herotab activetab">Riding School</div>
+                        <div class="herotab">Riding Holiday</div>
+                        <div class="herotab">Carries</div>
+                        <div class="herotab">Riding Stable</div>
+                    </div>
 
-            <form action="" id="heroselect">
-                <label for="first" style="display: inline-flex; align-items: center;"><input type="radio" name="feature" id="first" value="first">feature first</label>
-                <label for="second" style="display: inline-flex; align-items: center;"><input type="radio" name="feature" id="second" value="second">feature second</label>
-                <label for="third" style="display: inline-flex; align-items: center;"><input type="radio" name="feature" id="third" value="third">feature third</label>
+                    <form action="" id="heroselect">
+                        <label for="first" style="display: inline-flex; align-items: center;"><input type="radio" name="feature" id="first" value="first">feature first</label>
+                        <label for="second" style="display: inline-flex; align-items: center;"><input type="radio" name="feature" id="second" value="second">feature second</label>
+                        <label for="third" style="display: inline-flex; align-items: center;"><input type="radio" name="feature" id="third" value="third">feature third</label>
 
-                <input id="findinput" type="text" placeholder="Zip/Code City" >
-                <button id="findbtn" style="background-color: darkblue;">Find</button>
-            </form>
+                        <input id="findinput" type="text" placeholder="Zip/Code City" >
+                        <button id="findbtn" style="background-color: darkblue;">Find</button>
+                    </form>
+            </div>
         </div>
     </div>
 
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 100" style="z-index: 2; position:absolute; margin-top: -75px"><path d="M0 0v4s250 80 800 80 800-80 800-80V0H0Z" fill="goldenrod" transform="scale(1,-1) translate(0,-100)" ></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 100" style="z-index: 5; position:absolute; margin-top: -75px"><path d="M0 0v4s250 60 800 60 800-60 800-60V0H0Z" fill="#dee5eb" transform="scale(1,-1) translate(0,-100)" ></path></svg> -->
+
+<!-- <div class="divider">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 100" width="100%">
+    <path d="M0 0v4s250 100 800 100 800-100 800-100V0H0Z" fill="#000"
+          transform="scale(1,-1) translate(0,-100)" />
+  </svg>
+
+  <svg class="wave-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 100" width="100%">
+    <path d="M0 0v4s250 60 800 60 800-60 800-60V0H0Z" fill="#fff"
+          transform="scale(1,-1) translate(0,-100)" />
+  </svg>
+</div> -->
+
+
     <!-- aboutussection -->
     <section id="aboutus">
-        <div id="abouttext">
-            <h2>About Us</h2>
-            <hr style="margin-left: auto;">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus dolores velit vel minima optio doloribus, praesentium excepturi consequatur porro ex id quos suscipit iste. Inventore similique quam tenetur aspernatur autem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolores ducimus excepturi in? Omnis sequi expedita dolorum iure tempora quibusdam. Nostrum illum enim minima ea doloremque natus nulla deserunt numquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quidem doloribus, dolor ea reprehenderit unde perferendis quas molestias voluptates iure nam odit tempora, qui ab blanditiis neque rem fuga? Nobis.</p>
+        <div class="container"> 
+            <div id="abouttext">
+                <h2>About Us</h2>
+                <hr style="margin-left: auto;">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus dolores velit vel minima optio doloribus, praesentium excepturi consequatur porro ex id quos suscipit iste. Inventore similique quam tenetur aspernatur autem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolores ducimus excepturi in? Omnis sequi expedita dolorum iure tempora quibusdam. Nostrum illum enim minima ea doloremque natus nulla deserunt numquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quidem doloribus, dolor ea reprehenderit unde perferendis quas molestias voluptates iure nam odit tempora, qui ab blanditiis neque rem fuga? Nobis.</p>
+            </div>
+            
+            <div id="cardscont">
+                <div id="cards">
+                    <!-- <div class="card">
+                        <img src="./assets/images/IMG_20191025_224137.jpg" alt="img1">
+                        <div class="cardtitle">
+                            Activity1
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/images/IMG_20191025_224137.jpg" alt="img1">
+                        <div class="cardtitle">
+                            Activity1
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/images/IMG_20191025_224137.jpg" alt="img1">
+                        <div class="cardtitle">
+                            Activity1
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/images/IMG_20191025_224137.jpg" alt="img1">
+                        <div class="cardtitle">
+                            Activity1
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/images/IMG_20191025_224137.jpg" alt="img1">
+                        <div class="cardtitle">
+                            Activity1
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+
+
+            <div id="actcarcont"  class="hidediv">
+                <div id="actcarousel">
+                    <button><strong>&lt</strong> </button>
+
+                    <div id="actcarouselid">
+                    </div>
+
+                    <button><strong>&gt</strong></button>
+                </div>
+            </div>
+
+            
+            <!-- <div id="actcarousel">
+                <button><strong>&lt</strong> </button>
+                <div id="actcarouselid">
+                </div>
+                <button><strong>&gt</strong></button>
+
+            </div> -->
+    
+            <hr id="aboutushr">
         </div>
-        
-        <div id="cards">
-            <div class="card">
-                <img src="./assets/images/IMG_20191025_224137.jpg" alt="img1">
-                <div class="cardtitle">
-                    Activity1
-                </div>
-            </div>
-            <div class="card">
-                <img src="./assets/images/IMG_20191025_224137.jpg" alt="img1">
-                <div class="cardtitle">
-                    Activity1
-                </div>
-            </div>
-            <div class="card">
-                <img src="./assets/images/IMG_20191025_224137.jpg" alt="img1">
-                <div class="cardtitle">
-                    Activity1
-                </div>
-            </div>
-            <div class="card">
-                <img src="./assets/images/IMG_20191025_224137.jpg" alt="img1">
-                <div class="cardtitle">
-                    Activity1
-                </div>
-            </div>
-            <div class="card">
-                <img src="./assets/images/IMG_20191025_224137.jpg" alt="img1">
-                <div class="cardtitle">
-                    Activity1
-                </div>
-            </div>
-        </div>
-        <hr id="aboutushr">
     </section>
 
     <!-- horseridingtrainingsection -->
     <section id="training">
-        <div id="trainingtext">
-            <h1>Horse Riding <span style="color: goldenrod;">Trainings</span></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus dolores velit vel minima optio doloribus, praesentium excepturi consequatur porro ex id quos suscipit iste. Inventore similique quam tenetur aspernatur autem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolores ducimus excepturi in? Omnis sequi expedita dolorum iure tempora quibusdam. Nostrum illum enim minima ea doloremque natus. </p>
-            <button style="border-radius: 50px; padding: 0 30px; background-image: linear-gradient(to right, goldenrod, rgb(153, 115, 20));">Learn More</button>
+        <div class="container" id="training"> 
+            <div id="trainingtext">
+                <h1>Horse Riding <span style="color: goldenrod;">Trainings</span></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus dolores velit vel minima optio doloribus, praesentium excepturi consequatur porro ex id quos suscipit iste. Inventore similique quam tenetur aspernatur autem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolores ducimus excepturi in? Omnis sequi expedita dolorum iure tempora quibusdam. Nostrum illum enim minima ea doloremque natus. </p>
+                <button id="morebtn" style="border-radius: 50px; padding: 0 30px; background-image: linear-gradient(to right, goldenrod, rgb(153, 115, 20));">Learn More</button>
+            </div>
+            <img src="./assets/images/IMG_20191027_225704.jpg" alt="training">
         </div>
-        <img src="./assets/images/IMG_20191027_225704.jpg" alt="training">
-        
     </section>
-    
+        
     <!-- ridinghorsessection -->
-    <section class="horses">
-        <div class="horsestext">
-            <h1>Riding <span style="color: goldenrod;">Horses</span></h1>
-            <hr>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus dolores velit vel minima optio doloribus, praesentium excepturi consequatur porro ex id quos suscipit iste. Inventore similique quam tenetur aspernatur autem? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <section style="background-color: #80808028;">
+        <div class="container">
+            <div id="horses"> 
+                <div id="horsestext">
+                    <h1>Riding <span style="color: goldenrod;">Horses</span></h1>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus dolores velit vel minima optio doloribus, praesentium excepturi consequatur porro ex id quos suscipit iste. Inventore similique quam tenetur aspernatur autem? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
-            <button style="padding: 5px; border-radius: 50%; height: 40px; width: 40px; background-color: white; color: black;"><strong>&lt</strong> </button>
-            <button style="padding: 5px; border-radius: 50%; height: 40px; width: 40px; background-color: white; color: black;"><strong>&gt</strong></button>
-        </div>
-        
-        <div class="carousel"> 
-            <!-- <div class="carouselimg activeimg">
-                <div class="horseblank"></div>
-                <div class="horsedet">
-                    <h3>Horse Name</h3>
-                    <p>Breed, Year <br>Owner</p>
+                    <button style="padding: 5px; border-radius: 50%; height: 40px; width: 40px; background-color: white; color: black;"><strong>&lt</strong> </button>
+                    <button style="padding: 5px; border-radius: 50%; height: 40px; width: 40px; background-color: white; color: black;"><strong>&gt</strong></button>
                 </div>
-            </div> -->
-        </div>
+                    
+                    <div class="carousel"> 
+                        <!-- <div class="carouselimg activeimg">
+                            <div class="horseblank"></div>
+                            <div class="horsedet">
+                                <h3>Horse Name</h3>
+                                <p>Breed, Year <br>Owner</p>
+                            </div>
+                        </div> -->
+                    </div>
 
-        
+            </div>
+        </div>
     </section>
 
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 100" style="z-index: 2; position:absolute;"><path d="M0 0v4s250 40 800 40 800-40 800-40V0H0Z" fill="#dee5eb" ></path></svg>
+    
+
+    <!-- footer -->
     <footer>
-        <div id="footercontent">
-            <div style="display: flex; align-items: center;">
-                <img src="./assets/images/IMG_20191027_225715.jpg" alt="logo">
+        <div class="container">
+            <div id="footercontent">
+                <div style="display: flex; align-items: center;">
+                    <img src="./assets/images/IMG_20191027_225715.jpg" alt="logo">
+                </div>
+                <div class="footersub">
+                    <h2>Navigation</h2>
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Riding School</a>
+                    <a href="#">Riding Holiday</a>
+                    <a href="#">Carries</a>
+                    <a href="#">Riding Stable</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="footersub">
+                    <h2>Contact Us</h2>
+                    <p>jdhfijsdfdjidjvbjnhjvgcfyhyftxdrtctyfgjjmmuyyydjdmdddddddddddhjjjjjjjjjjjyfewsqaswerftghjkm,ljcsdcd</p>
+                    <p>jdhfijsdfdjidjcsdcd</p>
+                    <p>jdhfijsdfdjidjcsdcd</p>
+                    <p>jdhfijsdfdjidjcsdcd</p>
+                </div>
+                <div class="footersub">
+                    <h2>Follow Us</h2>
+                    <form action="">
+                        <input id="suscribeinput" type="text" placeholder="Your Email">
+                        <!-- <br><br> -->
+                        <button id="suscribebtn">Suscribe</button>
+                    </form>
+                </div>
             </div>
-            <div class="footersub">
-                <h2>Navigation</h2>
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Riding School</a>
-                <a href="#">Riding Holiday</a>
-                <a href="#">Carries</a>
-                <a href="#">Riding Stable</a>
-                <a href="#">Contact</a>
-            </div>
-            <div class="footersub">
-                <h2>Contact Us</h2>
-                <p>jdhfijsdfdjidjvbjnhjvgcfyhyftxdrtctyfgjjmmuyyydjdmdddddddddddhjjjjjjjjjjjyfewsqaswerftghjkm,ljcsdcd</p>
-                <p>jdhfijsdfdjidjcsdcd</p>
-                <p>jdhfijsdfdjidjcsdcd</p>
-                <p>jdhfijsdfdjidjcsdcd</p>
-            </div>
-            <div class="footersub">
-                <h2>Follow Us</h2>
-                <form action="">
-                    <input id="suscribeinput" type="text" placeholder="Your Email">
-                    <!-- <br><br> -->
-                    <button id="suscribebtn">Suscribe</button>
-                </form>
+            <hr>
+            <div id="footerend">
+                <p>&copy; All Rights Reserved</p>
             </div>
         </div>
-        <hr>
-        <div id="footerend">
-            <p>&copy; All Rights Reserved</p>
+    </footer>   
+    
+    <!-- <div id="actcarousel">
+        <button><strong>&lt</strong> </button>
+
+        <div class="carousel" id="actcarouselid">
         </div>
-    </footer>    
+
+        <button><strong>&gt</strong></button>
+    </div> -->
+    
 
     
     <script src="./assets/js/index.js"></script>

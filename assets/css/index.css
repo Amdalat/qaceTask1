@@ -2,10 +2,20 @@ body{
     margin: 0;
     padding: 0;
     background-color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.9rem;
 }
 
+.container {
+  width: 100%;
+  max-width: 1264px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
 header{
-    padding: 10px 10%;
+    padding: 10px 9%;
 }
 
 #hamburger{
@@ -57,6 +67,11 @@ button{
 }
 button:hover{
     transition: ease-in-out 0.2s;
+    background-blend-mode: darken;
+    background: rgba(218, 165, 32, 0.484);
+}
+
+#loginbtn:hover, #morebtn:hover{
     transform: scale(1.1);
 }
 
@@ -68,20 +83,41 @@ main{
     padding: 10px 100px;
 }
 
+.divider {
+  position: relative;
+  line-height: 0;
+}
+
+.divider svg {
+  display: block;
+}
+
+.divider .wave-top {
+  position: relative;
+  margin-top: -40px; 
+}
+
+
 #hero{
     color: white;
     background-image: url("../images/IMG_20191025_224137.jpg");
     background-size: cover;
-    padding: 100px 10%;
+    padding: 100px 0 100px 0;
 }
 
 #herotext{
-    width: 400px;
+    width: 40%;
+    padding-left: 9%;
 }
 
 #herotabs{
     display: flex;
     gap: 10px;
+}
+
+#herosub{
+    padding-left: 9%;
+    padding-bottom: 50px;
 }
 
 .herotab{
@@ -92,7 +128,7 @@ main{
     text-align: center;
     background-color: rgba(255, 255, 255, 0.158);
     border-radius: 5px 5px 0 0;
-    font-size: 13px;
+    font-size: 0.9rem;
 }
 
 .activetab{
@@ -136,7 +172,7 @@ label{
 
 }
 #abouttext h2{
-    font-size: 30px;
+    font-size: 2rem;
     margin: 0;
 }
 
@@ -184,35 +220,33 @@ label{
 }
 
 #training img{
-    width: 60%;
-    height: 70vh;
+    width: 50%;
+    height: 500px;
     clip-path: polygon(25% 0, 100% 0, 100% 100%, 25% 100%, 0 50%);
 }
 
-#trainingtext, .horsestext{
+#trainingtext, #horsestext{
     padding: 30px 0;
-    width: 40%;
-    margin: 10px 5% 10px 10%;
+    width: 35%;
+    margin: 10px 0 10px 9%;
     line-height: 30px;
 }
 
-#trainingtext h1, .horsestext h1{
-    font-size: 35px;
+#trainingtext h1, #horsestext h1{
+    font-size: 2rem;
     color: darkblue;
     margin: 0;
 }
 
-.horses{
+#horses{
     display: flex;
-    /* flex-wrap: wrap; */
-    /* justify-content: center; */
+    justify-content: space-between;
     align-items: center;
-    background-color: rgba(128, 128, 128, 0.155);
     padding: 30px 0;
-    margin-bottom: -20px;
+    /* margin-bottom: -20px; */
 }
 
-.horsestext{
+#horsestext{
     width: 25%;
 }
 
@@ -226,7 +260,7 @@ hr{
 
 .carousel{
     display: flex;
-    width: 70%;
+    width: 60%;
     padding: 30px 0;
     margin: 0;
 }
@@ -238,6 +272,28 @@ hr{
     flex: 0 0 33.3%;
     background-size: cover;
     height: 250px;
+}
+
+#actcarousel{
+    display:flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+#actcarousel button{
+    padding: 5px;
+    border-radius: 10px;
+    height: 60px;
+    width: 40px;
+    background-color: grey;
+    color: white;
+}
+#actcarouselid{
+    gap: 10px;
+    width: max-content;
+    display: flex;
+    padding: 30px 0;
+    margin: 0;
 }
 
 .activeimg{
@@ -265,21 +321,20 @@ hr{
 }
 
 .horsedet p{
-    font-size: 10px;
+    font-size: 0.7rem;
 }
 
 footer{
     background-color: darkblue;
-    /* margin-top: -40px; */
-    /* z-index: 1; 
-    position: relative; */
+    color: white;
+    padding-top: 30px;
 }
 
 #footercontent{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
-    padding: 30px 7% 10px 7%;
+    padding: 30px 9% 10px 9%;
 }
 
 footer img{
@@ -297,7 +352,6 @@ footer hr{
 
 .footersub{
     display: flex;
-    /* flex-wrap: wrap; */
     flex-direction: column;
     gap: 10px;
 }
@@ -308,8 +362,12 @@ footer hr{
     margin: 0;
 }
 
-.footersub a:hover{
+.footersub a{
     color: white;
+}
+
+.footersub  a:hover{
+    color: grey;
     transition: ease-in-out 0.2s;
     transform: scale(1.0);
 }
@@ -321,6 +379,15 @@ footer hr{
 }
 
 
+@media (min-width: 1728px){
+    #horses{
+        padding-bottom: 0;
+    }
+    #footercontent{
+        padding-top: 100px;
+    }
+}
+
 @media (max-width: 1023px){
     #heroselect{
         flex-wrap: wrap;
@@ -331,11 +398,11 @@ footer hr{
         word-wrap: break-word;
     }
 
-    #training, .horses{
+    #training, #horses{
         flex-direction: column;
     }
 
-    #trainingtext, .horsestext{
+    #trainingtext, #horsestext{
         width: 90%;
         text-align: center;
     }
@@ -370,8 +437,12 @@ footer hr{
         margin: auto;
     }
 
+    #herotext, #herosub{
+        padding: 9%;
+    }
+
     #abouttext, #herotext{
-        width: 90%;
+        width: 80%;
     }
     #aboutushr{
         width: 100%;
@@ -401,10 +472,6 @@ footer hr{
         margin: 0;
     }
 
-    .horsedet p{
-        font-size: 10px;
-    }
-
     #footercontent {
         grid-template-columns: 1fr;   
     }
@@ -412,14 +479,4 @@ footer hr{
     .footersub p{
         min-width: 100px;
     }
-}
-
-
-/* inprogess */
-.curved-section {
-    /* background: black; */
-    padding-bottom: 100px;
-    clip-path: ellipse(120% 100% at 50% 0%);
-     z-index: 2; position: relative;
-    /* clip-path: ellipse(120% 100% at 50% 100%); */
 }
