@@ -100,7 +100,8 @@ main{
 
 #hero{
     color: white;
-    background-image: url("../images/IMG_20191025_224137.jpg");
+    /* background-image: url("../images/IMG_20191025_224137.jpg"); */
+    background-image: url("../images/IMG_20191220_222402.jpg");
     background-size: cover;
     padding: 100px 0 100px 0;
 }

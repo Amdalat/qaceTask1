@@ -1,11 +1,20 @@
-const images = [{img: "../assets/images/IMG_20191025_224137.jpg", name: "horse1", breed:"breed11", year: 2000, owner: "Fernando"},{img: "../assets/images/IMG_20191027_225646.jpg", name: "horse2", breed:"breed11", year: 2000, owner: "Fernando"},{img: "../assets/images/IMG_20191027_225704.jpg", name: "horse3", breed:"breed11", year: 2000, owner: "Fernando"},{img: "../assets/images/IMG_20191027_225715.jpg", name: "horse4", breed:"breed11", year: 2000, owner: "Fernando"},{img: "../assets/images/IMG_20191027_225737.jpg", name: "horse5", breed:"breed11", year: 2000, owner: "Fernando"},{img: "../assets/images/IMG_20191027_225802.jpg", name: "horse6", breed:"breed11", year: 2000, owner: "Fernando"},{img: "../assets/images/IMG_20191027_225749.jpg", name: "horse7", breed:"breed11", year: 2000, owner: "Fernando"}];
+const repoName = "qaceTask1";   
+let basePath = "";
+
+if (window.location.hostname.includes("github.io")) {
+  basePath = `/${repoName}`;
+} else {
+  basePath = "..";
+}
+
+const images = [{img: basePath +"/assets/images/IMG_20191025_224137.jpg", name: "horse1", breed:"breed11", year: 2000, owner: "Fernando"},{img: basePath +"/assets/images/IMG_20191027_225646.jpg", name: "horse2", breed:"breed11", year: 2000, owner: "Fernando"},{img: basePath +"/assets/images/IMG_20191027_225704.jpg", name: "horse3", breed:"breed11", year: 2000, owner: "Fernando"},{img: basePath +"/assets/images/IMG_20191027_225715.jpg", name: "horse4", breed:"breed11", year: 2000, owner: "Fernando"},{img: basePath +"/assets/images/IMG_20191027_225737.jpg", name: "horse5", breed:"breed11", year: 2000, owner: "Fernando"},{img: basePath +"/assets/images/IMG_20191027_225802.jpg", name: "horse6", breed:"breed11", year: 2000, owner: "Fernando"},{img: basePath +"/assets/images/IMG_20191027_225749.jpg", name: "horse7", breed:"breed11", year: 2000, owner: "Fernando"}];
 
 const cardimgs = [
-  { img: "../assets/images/IMG_20191025_224137.jpg", name: "Activity1" },
-  { img: "../assets/images/IMG_20191027_225646.jpg", name: "Activity2" },
-  { img: "../assets/images/IMG_20191027_225749.jpg", name: "Activity3" },
-  { img: "../assets/images/IMG_20191025_224137.jpg", name: "Activity4" },
-  { img: "../assets/images/IMG_20191027_225715.jpg", name: "Activity5" },
+  { img: basePath +"/assets/images/IMG_20191025_224137.jpg", name: "Activity1" },
+  { img: basePath +"/assets/images/IMG_20191027_225646.jpg", name: "Activity2" },
+  { img: basePath +"/assets/images/IMG_20191027_225749.jpg", name: "Activity3" },
+  { img: basePath +"/assets/images/IMG_20191025_224137.jpg", name: "Activity4" },
+  { img: basePath +"/assets/images/IMG_20191027_225715.jpg", name: "Activity5" },
 ];
 
 let showingimgs = [6,0,1];
@@ -190,7 +199,7 @@ function toggleNav(larger, smaller, width) {
 
 
 
-let activityshowing = [1, 2];
+let activityshowing = [0];
 
 const carousell = document.getElementById("actcarousel");
 const carouselbtns2 = document.querySelectorAll("#actcarousel button");
